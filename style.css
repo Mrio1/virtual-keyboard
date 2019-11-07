@@ -1,0 +1,66 @@
+textarea {
+   display: block;
+   margin: 0 auto;
+   width: 800px;
+   min-height: 300px;
+
+}
+.virtual_keyboard {
+    display: block;
+    margin: 0 auto;
+    background: pink;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 1.4s;
+}
+
+.key:hover, .active {
+    background-color: blue 
+}
+
+[data="Backspace"]{
+    width: 70px;
+}
+[data="Tab"]{
+    width: 40px;
+}
+
+[data="Backspace"]{
+    width: 70px;
+}
+
+[data="CapsLock"]{
+    width: 70px;
+}
+
+[data="Enter"]{
+    width: 90px;
+}
+
+[data="ShiftLeft"], [data="ShiftRight"] {
+    width: 100px;
+}
+
+[data="ControlLeft"], [data="ControlRight"] {
+    width: 50px
+}
+[data="AltLeft"], [data="AltRight"] {
+    width: 50px
+}
+
+[data="Space"] {
+    width: 200px
+}
