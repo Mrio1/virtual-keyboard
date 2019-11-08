@@ -119,7 +119,6 @@ let keyCodes = {
         "Space":['Space','Space'],
         "AltRight":['Alt','Alt'],
         "ControlRight" :['Ctrl','Ctrl'] 
-    
     }
 } 
 let codeArray = [
@@ -142,12 +141,14 @@ for (let i = 0; i < 5; i++){
     section.appendChild(row);
 }
 body.appendChild(section);
-
 let capsShift = new Set();
-
 let lang;
+if (lang = localStorage.getItem('language')){
+
+}
 
 function initKeyboard(lang='lang1'){
+    localStorage.setItem('language',lang);
     let i;
     if (capsShift.has(16)||capsShift.has(20)){
         i =1;
@@ -169,7 +170,7 @@ function initKeyboard(lang='lang1'){
     }
 }
 
-initKeyboard();
+initKeyboard(lang);
 
 let pressed = new Set();
 
